@@ -29,7 +29,7 @@ section {
 	height: 650px;
 }
 .two {
-	background-image: url(./images/Two.png);
+	background-image: url(./Images/Two.png);
 	height: 650px;
 }
 .three {
@@ -37,7 +37,7 @@ section {
 	height: 650px;
 }
 .four {
-	background-image: url(/images/Four.png);
+	background-image: url(../Images/Four.png);
 	height: 650px;
 }
 .five {
