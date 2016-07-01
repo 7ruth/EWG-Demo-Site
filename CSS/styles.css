@@ -25,11 +25,11 @@ section {
 	background-size: cover;
 }
 .one {
-	background-image: url(images/One.png);
+	background-image: url(Images/One.png);
 	height: 650px;
 }
 .two {
-	background-image: url(/images/Two.png);
+	background-image: url(./images/Two.png);
 	height: 650px;
 }
 .three {
