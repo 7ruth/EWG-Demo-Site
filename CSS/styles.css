@@ -25,19 +25,19 @@ section {
 	background-size: cover;
 }
 .one {
-	background-image: url(/images/one.png);
+	background-image: url(images/one.png);
 	height: 650px;
 }
 .two {
-	background-image: url(/images/two.png);
+	background-image: url(../images/two.png);
 	height: 650px;
 }
 .three {
-	background-image: url(/Images/Three.png);
+	background-image: url(./images/Three.png);
 	height: 650px;
 }
 .four {
-	background-image: url(./Images/Four.png);
+	background-image: url(./images/Four.png);
 	height: 650px;
 }
 .five {
