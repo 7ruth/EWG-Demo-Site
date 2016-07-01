@@ -9,52 +9,44 @@ body {
 
 section {
 	position: relative;
-	top: 250px;
 	width: 100%;
 	height: 3000px;
 	margin: 0 auto;
 }
 
-h1, h2, p {
-	color: white;
-	font-family: helvetica, arial;
-	text-shadow: 0 1px 2px rgba(0,0,0,0.5);
-	position: absolute;
-	left: 50%;
-	width: 300px;
-	margin-left: -150px;
-}
-
-h1 {
-	font-size: 68px;
-	top: 85px;
-}
-
-h2 {
-	font-size: 27px;
-	top: 170px;
-}
-
-p {
-	font-size: 17px;
-	top: 210px;
-}
-
 .pixel {
 	position: absolute;
 	width: 100%;
-	height: 300px;
 	background: white;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	position: relative;
+	background-size: cover;
 }
-.summer {
-	background-image: url(http://markdalgleish.com/projects/stellar.js/demos/images/summer.jpg)
+.one {
+	background-image: url(../images/One.png);
+	height: 650px;
 }
-.winter {
-	background-image: url(http://markdalgleish.com/projects/stellar.js/demos/images/winter.jpg)
+.two {
+	background-image: url(../images/Two.png);
+	height: 650px;
+}
+.three {
+	background-image: url(../images/Three.png);
+	height: 650px;
+}
+.four {
+	background-image: url(../images/Four.png);
+	height: 650px;
+}
+.five {
+	background-image: url(../images/Five.png);
+	height: 2000px;
+}
+.six {
+	background-image: url(../images/Six.png);
+	height: 2400px;
 }
 
 .mobile body {
