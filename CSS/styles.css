@@ -25,23 +25,23 @@ section {
 	background-size: cover;
 }
 .one {
-	background-image: url(../images/One.png);
+	background-image: url(/images/One.png);
 	height: 650px;
 }
 .two {
-	background-image: url(../images/Two.png);
+	background-image: url(/images/Two.png);
 	height: 650px;
 }
 .three {
-	background-image: url(../images/Three.png);
+	background-image: url(/images/Three.png);
 	height: 650px;
 }
 .four {
-	background-image: url(../images/Four.png);
+	background-image: url(/images/Four.png);
 	height: 650px;
 }
 .five {
-	background-image: url(../images/Five.png);
+	background-image: url(/images/Five.png);
 	height: 2000px;
 }
 .six {
