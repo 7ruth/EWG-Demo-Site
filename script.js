@@ -13,8 +13,8 @@ if (mobile) {
   $('#group1 h2').css('font-size', '.75em');
   $('#group1 h3').css('font-size', '.5em');
   $('#group1').css('height', '550px');
-  $('#group2').css('height', '500px');
-  $('#group3').css('height', '400px');
+  $('#group2').css('height', '550px');
+  $('#group3').css('height', '500px');
   $('#group4').css('height', '400px');
   $('#group5').css('height', '450px');
   $('#group6').css('height', '550px');
