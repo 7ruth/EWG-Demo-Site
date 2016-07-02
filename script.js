@@ -8,20 +8,17 @@ $(window).load(function() {
 if (mobile) {
   $('#group1 img').css('left', '30%');
   $('#group1 img').css('transform', '-30%');
-  $('#group1 img').css('width', '1em;');
-  $('#group1 h1').css('font-size', '1.5em');
-  $('#group1 h2').css('font-size', '1em');
-  $('#group1 h3').css('font-size', '.75em');
-  $('#group1').css('height', '550px');
-  $('#group2').css('height', '450px');
-  $('#group3').css('height', '400px');
+  $('#group1 img').css('width', '10px;');
+  $('#group1 h1').css('font-size', '1em');
+  $('#group1 h2').css('font-size', '.75em');
+  $('#group1 h3').css('font-size', '.5em');
+  $('#group1').css('height', '60px');
+  $('#group2').css('height', '500px');
+  $('#group3').css('height', '500px');
   $('#group4').css('height', '400px');
   $('#group5').css('height', '450px');
   $('#group6').css('height', '550px');
   $('#group7').css('height', '400px');
   $('#group7 img').css('left', '22.5%');
   $('#group7 img').css('transform', '-22.5%');
-    //adjust font sizes
-    //adjust logo positioning
-    //size of each layer group
   }
