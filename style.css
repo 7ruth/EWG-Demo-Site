@@ -1,0 +1,302 @@
+/* Parallax base styles
+--------------------------------------------- */
+.parallax {
+  height: 500px; /* fallback for older browsers */
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+  -webkit-perspective-origin-x: 100%;
+  perspective-origin-x: 100%;
+}
+.parallax__group {
+  position: relative;
+  height: 850px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform-origin-x: 100%;
+  transform-origin-x: 100%;
+}
+.parallax__layer--fore {
+  -webkit-transform: translateZ(90px) scale(.7);
+  transform: translateZ(90px) scale(.7);
+  z-index: 1;
+}
+.parallax__layer--back {
+  -webkit-transform: translateZ(-300px) scale(2.1);
+  transform: translateZ(-300px) scale(2.1);
+  z-index: 2;
+  background-repeat: none;
+}
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 3;
+}
+body, html {
+  overflow: hidden;
+}
+body {
+  font: 100% / 1.5 Arial;
+}
+* {
+  margin:0;
+  padding:0;
+}
+.parallax {
+  font-size: 200%;
+}
+ /* centre the content in the parallax layers */
+.textContainer {
+  text-align: center;
+  position: absolute;
+  width:80%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* CSS * notes: z-index gives structure to overlapping layers (which also have their own z-indexes) by varying z-index*/
+#group1 {
+  z-index: 1; /* slide under groups 2 */
+  font-family: 'Amatic SC', cursive;
+  color: white;
+}
+#group1 img {
+      width: 4em;
+      position: fixed;
+      top: 12.5vh;
+      left: 50%;
+      transform: translate(-50%);
+      z-index:100;
+    }
+  #group1 h1 {
+    width: 100%;
+    padding: 30px 0 0 0;
+    font-size: 2em;
+  }
+  #group1 h2 {
+    color: rgb(168, 217, 228);
+    font-weight: 900;
+    font-size: 1.5em;
+  }
+  #group1 h3 {
+    font-weight: 100;
+    font-size: 1.5em;
+  }
+  #group1 a:link {
+    color: white;
+  }
+  #group1 a:visited {
+    color: rgb(168, 217, 228);
+  }
+#group2 {
+  font-family: 'Roboto Slab', serif;
+  z-index: 2; /* slide over group 3 */
+  color: white;
+  width:100%;
+}
+  #group2 h1 {
+    font-size: 4vw;
+  }
+  #group2 h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 8vw;
+    color: rgb(36, 127, 170);
+    width:100%;
+  }
+  #group2 h3 {
+    font-size: 4vw;
+    width:100%;
+  }
+  #group2 a:link {
+    color: white;
+  }
+  #group2 a:visited {
+    color: rgb(168, 217, 228);
+  }
+#group3 {
+  font-family: 'Roboto Slab', serif;
+  z-index: 1; /* slide under group 4 */
+  color: white;
+}
+  #group3 h1 {
+    color: rgb(197, 101, 40);
+    font-family: 'Amatic SC', cursive;
+    font-size: 8vw;
+  }
+  #group3 h2 {
+    font-size: 3vw;
+    font-weight: 900;
+    text-align: left;
+  }
+  #group3 h3 {
+    font-size: 2.5vw;
+    font-weight: 100;
+    text-align: left;
+    padding: 0 0 20px 0;
+  }
+#group4 {
+  font-family: 'Roboto Slab', serif;
+  z-index: 2; /* slide over group 5 */
+  color: white;
+}
+  #group4 h1 {
+    font-family: 'Amatic SC', cursive;
+    color: rgb(252, 201, 145);
+    font-size: 6vw;
+    padding: 10px 0 10px 0;
+  }
+  #group4 h2 {
+    font-size: 2vw;
+  }
+  #group4 h3 {
+    font-family: 'Amatic SC', cursive;
+    color: rgb(122, 46, 23);
+    font-size: 6vw;
+    padding: 10px 0 10px 0;
+  }
+  #group4 table {
+    font-size: 3vw;
+    position:relative;
+    left: 27.5%;
+    transform(-27.5%)
+  }
+  #group4 table img {
+    width: 4vw;
+  }
+  #group4 a:link {
+    color: white;
+  }
+  #group4 a:visited {
+    color: rgb(252, 201, 145);
+  }
+#group5 {
+  z-index: 1; /* slide under group 6 */
+  color: white;
+  font-family: 'Roboto Slab', serif;
+}
+  #group5 h1 {
+    font-family: 'Amatic SC', cursive;
+    color: rgb(36, 127, 170);
+    text-align:left;
+    font-size: 7vw;
+    padding: 20px 0 0 0;
+  }
+  #group5 h2 {
+    font-family: 'Amatic SC', cursive;
+    color: rgb(83, 182, 231);
+    text-align:left;
+    font-size: 5vw;
+    padding: 10px 0 0 0;
+  }
+  #group5 ul {
+    color: rgb(99, 99, 102);
+    font-size: 2.5vw;
+    text-align:left;
+    list-style-type:none;
+    padding: 10px 0 0 0;
+  }
+  #group5 li {
+    padding: 5px 0 0 0;
+  }
+#group6 {
+  z-index: 2;
+  font-family: 'Roboto Slab', serif;
+}
+  #group6 h1 {
+    font-family: 'Amatic SC', cursive;
+    color: rgb(87, 87, 90);
+    font-size: 10vw;
+  }
+  #group6 h2 {
+    font-family: 'Amatic SC', cursive;
+    color: rgb(99, 99, 102);
+    font-size: 6vw;
+    padding: 0 0 20px 0;
+  }
+  #group6 h3 {
+    color: rgb(99, 99, 102);
+    font-size: 4vw;
+  }
+  #group6 .homeMade {
+    color: rgb(99, 99, 102);
+    font-size: 2vw;
+  }
+  #group6 h4 {
+    color: rgb(197, 101, 40);
+    font-size: 4vw;
+  }
+  #group6 .skipIt {
+    color: rgb(197, 101, 40);
+    font-size: 2vw;
+  }
+  #group6 h5 {
+    color: rgb(56, 146, 202);
+    font-size: 4vw;
+  }
+  #group6 .tryIt {
+    color: rgb(56, 146, 202);
+    font-size: 2vw;
+  }
+  #group6 table {
+    width: 100%;
+    height: 100%;
+  }
+  #group6 td {
+    width: 50%;
+    height: 50%;
+    text-align: left;
+  }
+  #group6 .end, .endLink {
+    background-color: rgb(36, 127, 170);
+    color:white;
+    font-size: 3vw;
+    text-align: center;
+  }
+  #group6 a:link {
+    color: white;
+  }
+  #group6 a:visited {
+    color: rgb(83, 182, 231);
+  }
+  #group7 {
+    z-index: 1;
+    font-family: 'Roboto Slab', serif;
+  }
+  #group7 img {
+        position:absolute;
+        width: 4em;
+        left: 50%;
+        transform: translate(-50%);
+        z-index:100;
+      }
+  /*Pop out effect for a div  */
+        .popup {
+          -webkit-transition: all ease 0.5s;
+          -moz-transition: all ease 0.5s;
+          -o-transition: all ease 0.5s;
+          -ms-transition: all ease 0.5s;
+          transition: all ease 0.5s;
+        }
+        .popup img {
+          border-radius: 50%;
+          margin: 0.3em;
+          -webkit-transition: all ease 0.5s;
+          -moz-transition: all ease 0.5s;
+          -o-transition: all ease 0.5s;
+          -ms-transition: all ease 0.5s;
+          transition: all ease 0.5s;
+        }
+        .popup img:hover {
+          margin: 0px;
+          box-shadow: 6px 6px 4px 4px rgba(0,0,0,0.3);
+        }
