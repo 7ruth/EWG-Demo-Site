@@ -26,8 +26,7 @@ Adapted & Compiled for EWG by MartinTersk.in
   }
   .parallax__group {
     position: relative;
-    height: 500px; /* fallback for older browsers */
-    height: 800px;
+    height: 850px;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
   }
@@ -92,6 +91,7 @@ Adapted & Compiled for EWG by MartinTersk.in
         top: 12.5vh;
         left: 50%;
       	transform: translate(-50%);
+        z-index:100;
       }
     #group1 h1 {
       width: 100%;
@@ -157,43 +157,191 @@ Adapted & Compiled for EWG by MartinTersk.in
       font-size: 2.5vw;
       font-weight: 100;
       text-align: left;
+      padding: 0 0 20px 0;
     }
   #group4 {
+    font-family: 'Roboto Slab', serif;
     z-index: 2; /* slide over group 5 */
+    color: white;
   }
+    #group4 h1 {
+      font-family: 'Amatic SC', cursive;
+      color: rgb(252, 201, 145);
+      font-size: 6vw;
+      padding: 10px 0 10px 0;
+    }
+    #group4 h2 {
+      font-size: 2vw;
+    }
+    #group4 h3 {
+      font-family: 'Amatic SC', cursive;
+      color: rgb(122, 46, 23);
+      font-size: 6vw;
+      padding: 10px 0 10px 0;
+    }
+    #group4 table {
+      font-size: 3vw;
+      position:relative;
+      left: 27.5%;
+      transform(-27.5%)
+    }
+    #group4 table img {
+      width: 4vw;
+    }
+    #group4 a:link {
+      color: white;
+    }
+    #group4 a:visited {
+      color: rgb(252, 201, 145);
+    }
   #group5 {
     z-index: 1; /* slide under group 6 */
+    color: white;
+    font-family: 'Roboto Slab', serif;
   }
+    #group5 h1 {
+      font-family: 'Amatic SC', cursive;
+      color: rgb(36, 127, 170);
+      text-align:left;
+      font-size: 7vw;
+      padding: 20px 0 0 0;
+    }
+    #group5 h2 {
+      font-family: 'Amatic SC', cursive;
+      color: rgb(83, 182, 231);
+      text-align:left;
+      font-size: 5vw;
+      padding: 10px 0 0 0;
+    }
+    #group5 ul {
+      color: rgb(99, 99, 102);
+      font-size: 2.5vw;
+      text-align:left;
+      list-style-type:none;
+      padding: 10px 0 0 0;
+    }
+    #group5 li {
+      padding: 5px 0 0 0;
+    }
   #group6 {
     z-index: 2;
+    font-family: 'Roboto Slab', serif;
   }
+    #group6 h1 {
+      font-family: 'Amatic SC', cursive;
+      color: rgb(87, 87, 90);
+      font-size: 10vw;
+    }
+    #group6 h2 {
+      font-family: 'Amatic SC', cursive;
+      color: rgb(99, 99, 102);
+      font-size: 6vw;
+      padding: 0 0 20px 0;
+    }
+    #group6 h3 {
+      color: rgb(99, 99, 102);
+      font-size: 4vw;
+    }
+    #group6 .homeMade {
+      color: rgb(99, 99, 102);
+      font-size: 2vw;
+    }
+    #group6 h4 {
+      color: rgb(197, 101, 40);
+      font-size: 4vw;
+    }
+    #group6 .skipIt {
+      color: rgb(197, 101, 40);
+      font-size: 2vw;
+    }
+    #group6 h5 {
+      color: rgb(56, 146, 202);
+      font-size: 4vw;
+    }
+    #group6 .tryIt {
+      color: rgb(56, 146, 202);
+      font-size: 2vw;
+    }
+    #group6 table {
+      width: 100%;
+      height: 100%;
+    }
+    #group6 td {
+      width: 50%;
+      height: 50%;
+      text-align: left;
+    }
+    #group6 .end, .endLink {
+      background-color: rgb(36, 127, 170);
+      color:white;
+      font-size: 3vw;
+      text-align: center;
+    }
+    #group6 a:link {
+      color: white;
+    }
+    #group6 a:visited {
+      color: rgb(83, 182, 231);
+    }
+    #group7 {
+      z-index: 1;
+      font-family: 'Roboto Slab', serif;
+    }
+    #group7 img {
+          position:absolute;
+          width: 4em;
+          left: 50%;
+          transform: translate(-50%);
+          z-index:100;
+        }
+    /*Pop out effect for a div  */
+          .popup {
+            -webkit-transition: all ease 0.5s;
+            -moz-transition: all ease 0.5s;
+            -o-transition: all ease 0.5s;
+            -ms-transition: all ease 0.5s;
+            transition: all ease 0.5s;
+          }
+          .popup img {
+            border-radius: 50%;
+            margin: 0.3em;
+            -webkit-transition: all ease 0.5s;
+            -moz-transition: all ease 0.5s;
+            -o-transition: all ease 0.5s;
+            -ms-transition: all ease 0.5s;
+            transition: all ease 0.5s;
+          }
+          .popup img:hover {
+            margin: 0px;
+            box-shadow: 6px 6px 4px 4px rgba(0,0,0,0.3);
+          }
 </style>
 </head>
 
 <body cz-shortcut-listen="true">
   <div class="parallax">
-    <div id="group1" class="parallax__group">
-      <img src="images/EWG_New Logo_White.png" />
+    <div id="group1" class="parallax__group" >
+      <a href="http://www.ewg.org/"><img src="images/EWG_New Logo_White.png" /></a>
       <div class="parallax__layer parallax__layer--base">
         <div class="textContainer">
           <h1> EWG’s Guide to Healthy Cleaning </h1>
           <h2> TIPS FOR GREENER CLEANING</h2>
-          <h3><a href="www.ewg.org/guides/cleaners">www.ewg.org/guides/cleaners</a></h3>
+          <h3><a href="http://www.ewg.org/guides/cleaners">www.ewg.org/guides/cleaners</a></h3>
         </div>
       </div>
       <div class="parallax__layer parallax__layer--back" style="background-image: url(images/one.png);"></div>
     </div>
-    <div id="group2" class="parallax__group">
+    <div id="group2" class="parallax__group" style="height: 900px;">
       <div class="parallax__layer parallax__layer--fore">
         <div class="textContainer">
           <h1> Many manufacturers of household cleaners do not disclose all ingredients on product labels, making it virtually impossible for consumers to choose safer products. That’s why EWG developed the Guide to Healthy Cleaning. It rates cleaning products on ingredient hazards as well as disclosure. </h1>
           <h2> FIND BETTER PRODUCTS HERE</h2>
-          <h3><a href="www.ewg.org/guides/cleaners">www.ewg.org/guides/cleaners</a></h3>
+          <h3><a href="http://www.ewg.org/guides/cleaners">www.ewg.org/guides/cleaners</a></h3>
         </div>
       </div>
       <div class="parallax__layer parallax__layer--base" style="background-image: url(images/two.png);"></div>
     </div>
-    <div id="group3" class="parallax__group">
+    <div id="group3" class="parallax__group" style="height: 900px;">
       <div class="parallax__layer parallax__layer--base">
         <div class="textContainer">
           <h1> AVOID THESE THREE CLEANING PRODUCTS</h1>
@@ -207,23 +355,116 @@ Adapted & Compiled for EWG by MartinTersk.in
       </div>
       <div class="parallax__layer parallax__layer--back" style="background-image: url(images/three.png);"></div>
     </div>
-    <div id="group4" class="parallax__group">
+    <div id="group4" class="parallax__group" style="height: 1100px;">
       <div class="parallax__layer parallax__layer--fore">
-        <div class="textContainer">Foreground Layer</div>
+        <div class="textContainer">
+          <h1>WHAT THE LABEL DOESN'T TELL US</h1>
+          <h2>It would be easier if all ingredients were listed on the label. But they’re not. Check for warnings and ingredients, not marketing claims. </h2>
+          <h1>SKIP PRODUCTS CONTAINING</h1>
+          <h2>Ammonia, 2-butoxyethanol, chlorine bleach, ethanolamines, “Active ingredients” such as ADBAC, benzalkonium chloride, ingredients with names including “-monium chloride” or triclosan</h2>
+          <h3>MORE USEFUL TIPS FROM EWG</h3>
+          <div class="linkTable">
+            <table>
+              <tr>
+                <th><img src="images/signup.png" /></th>
+                <th><a href="http://ewg.org/signup">ewg.org/signup</a></th>
+              </tr>
+              <tr>
+                <th><img src="images/fb.png" /></th>
+                <th><a href="http://facebook.com/ewg.org">facebook.com/ewg.org</a></th>
+              </tr>
+              <tr>
+                <th><img src="images/twitter.png" /></th>
+                <th><a href="http://twitter.com/@ewg">@ewg</a></th>
+              </tr>
+            </table>
+          </div>
+        </div>
       </div>
       <div class="parallax__layer parallax__layer--base" style="background-image: url(images/four.png);"></div>
     </div>
-    <div id="group5" class="parallax__group">
+    <div id="group5" class="parallax__group" style="height: 1250px;">
       <div class="parallax__layer parallax__layer--base">
-        <div class="textContainer">Background Layer</div>
+        <div class="textContainer">
+          <h1>SAFER DIY ALTERNATIVES</h1>
+          <h2>SKIP STORE-BOUGHT CLEANERS AND MAKE YOUR OWN WITH:</h2>
+          <ul>
+            <li>White vinegar</li>
+            <li>Baking soda</li>
+            <li>Lemon juice</li>
+            <li>Fragrance-free liquid soap or dish detergent (not antibacterial)</li>
+            <li>Washing soda (wear gloves when using this ingredient)</li>
+          </ul>
+          <h1>TOOLS OF THE TRADE</h1>
+          <h2>ANY CLEANER WORKS BETTER WITH:</h2>
+          <ul>
+            <li>Microfiber dust cloth or mop</li>
+            <li>Abrasive scrub brush or sponge</li>
+            <li>Squeegee for showers and windows</li>
+          </ul>
+        </div>
       </div>
       <div class="parallax__layer parallax__layer--back" style="background-image: url(images/five.png);"></div>
     </div>
-    <div id="group6" class="parallax__group">
+    <div id="group6" class="parallax__group" style="height: 1400px;">
       <div class="parallax__layer parallax__layer--fore">
-        <div class="textContainer">Base Layer</div>
+        <div class="textContainer">
+          <h1>EWG’s TOP TIPS</h1>
+          <table>
+            <tbody>
+                <tr>
+                    <td>
+                      <h2>ALL-PURPOSE CLEANERS</h2>
+                      <h3>Homemade</h3>
+                      <p class="homeMade">Mix hot water with 1/2 teaspoon of washing soda and 1/2 teaspoon of liquid soap or dish detergent.</p>
+                      <h4>Skip It</h4>
+                      <p class="skipIt">“Antibacterial” cleaners contain pesticides and aren’t needed for household cleaning.</p>
+                      <h5 style="height:9vw; visibility:none;"></h5>
+                    </td>
+                    <td>
+                      <h2>BATHROOM</h2>
+                      <h3>Homemade</h3>
+                      <p class="homeMade">Soft scrub for bathroom surfaces: Wet 1/2 cup baking soda with a little liquid soap to get a frosting-like consistency.</p>
+                      <h4>Skip It</h4>
+                      <p class="skipIt">Chlorine bleach is a common but harsh ingredient.</p>
+                      <h5>Try It</h5>
+                      <p class="tryIt">For stubborn stains, try oxygen (color-safe) bleaches. Wear gloves.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                      <h2>KITCHEN</h2>
+                      <h3>Homemade</h3>
+                      <p class="homeMade">Grease-fighting surface cleaner: Mix vinegar and salt.</p>
+                      <h4>Skip It</h4>
+                      <p class="skipIt">Caustic oven cleaners can damage skin, eyes and lungs.</p>
+                      <h5>Try It</h5>
+                      <p class="tryIt">Sprinkle baking soda on oven stains. Moisten with water, let stand overnight, wipe and rinse.</p>
+                    </td>
+                    <td>
+                      <h2>LAUNDRY</h2>
+                      <h4>Skip It</h4>
+                      <p class="skipIt">Fabric softeners and dryer sheets coat fabric with asthma-causing “quat” and secret “fragrance” chemicals.</p>
+                      <h5>Try It</h5>
+                      <p class="tryIt">Add vinegar to the rinse cycle to prevent static cling, soften, brighten and reduce strong odors.</p>
+                      <h6 style="height:9vw; visibility:none;"></h6>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="end" style="margin: 20px 0 0 0; ">Use EWG’s Guide to Healthy Cleaning to find better products:</p>
+        <p class="endLink"><a href="http://www.ewg.org/guides/cleaners">www.ewg.org/guides/cleaners</a></p>
+        </div>
       </div>
       <div class="parallax__layer parallax__layer--base" style="background-image: url(images/six.png);"></div>
+    </div>
+    <div id="group7" class="parallax__group" style="height: 400px";>
+      <div class="parallax__layer parallax__layer--base" >
+        <div class="textContainer" >
+        <div class="popup"><a href="http://www.ewg.org/"><img src="images/EWG_New Logo_White.png" /></a></div>
+        </div>
+      </div>
+      <div class="parallax__layer parallax__layer--back" style="background-image: url(images/gorge.jpg);"></div>
     </div>
   </div>
 </body>
