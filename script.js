@@ -8,14 +8,16 @@ $(window).load(function() {
 if (mobile) {
   $('#group1 img').css('left', '30%');
   $('#group1 img').css('transform', '-30%');
+  $('#group1 h1').css('font-size', '2em');
+  $('#group1 h2').css('font-size', '1.5em');
   $('#group1 h3').css('font-size', '1em');
-  $('#group1').css('height', '600px');
+  $('#group1').css('height', '500px');
   $('#group2').css('height', '400px');
   $('#group3').css('height', '400px');
   $('#group4').css('height', '400px');
   $('#group5').css('height', '400px');
   $('#group6').css('height', '600px');
-  $('#group7').css('height', '600px');
+  $('#group7').css('height', '200px');
   $('#group7 img').css('left', '30%');
   $('#group7 img').css('transform', '-30%');
     //adjust font sizes
