@@ -6,10 +6,8 @@ $(window).load(function() {
 });
 //Mobile specific setting
 if (mobile) {
-    //adjust font sizes
-    //adjust logo positioning
-    //size of each layer group
-  } else {
+  $('#group1 img').css('left', '30%');
+  $('#group1 img').css('transform', '-30%');
     //adjust font sizes
     //adjust logo positioning
     //size of each layer group
