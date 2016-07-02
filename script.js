@@ -8,6 +8,10 @@ $(window).load(function() {
 if (mobile) {
   $('#group1 img').css('left', '30%');
   $('#group1 img').css('transform', '-30%');
+  $('#group2').css('height', '500px');
+  $('#group3').css('height', '500px');
+  $('#group7 img').css('left', '30%');
+  $('#group7 img').css('transform', '-30%');
     //adjust font sizes
     //adjust logo positioning
     //size of each layer group
